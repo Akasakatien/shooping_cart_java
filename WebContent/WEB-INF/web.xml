@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>HK4_Demo16_Paypal</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>authtoken</param-name>
+    <param-value>t5Qtd8HFGij1bhrYsWGtX49BbD69YJm0a26TjyNaa3qU1QHXIftrrAldP_a</param-value>
+  </context-param>
+  <context-param>
+    <param-name>posturl</param-name>
+    <param-value>https://www.sandbox.paypal.com/cgi-bin/webscr</param-value>
+  </context-param>
+  <context-param>
+    <param-name>business</param-name>
+    <param-value>akasakatien2-facilitator@gmail.com</param-value>
+  </context-param>
+  <context-param>
+    <param-name>returnurl</param-name>
+    <param-value>http://localhost:8080/HK4_Demo16_Paypal/Order</param-value>
+  </context-param>
+</web-app>

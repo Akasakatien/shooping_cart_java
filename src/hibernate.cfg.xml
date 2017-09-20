@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+  <property name="hibernate.enable_lazy_load_no_trans">true</property>
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/demo</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="hibernate.current_session_context_class">thread</property>
+  <mapping class="entities.Account"/>
+  <mapping class="entities.Category"/>
+  <mapping class="entities.Orders"/>
+  <mapping class="entities.Ordersdetail"/>
+  <mapping class="entities.OrdersdetailId"/>
+  <mapping class="entities.Product"/>
+  <mapping class="entities.Roles"/>
+  <mapping class="entities.UserRole"/>
+  <mapping class="entities.UserRoleId"/>
+  <mapping class="entities.Users"/>
+ </session-factory>
+</hibernate-configuration>
